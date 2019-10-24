@@ -9,7 +9,7 @@ class Airlines extends Modele
         $sql = "
                 CREATE TABLE IF NOT EXISTS `flighthub_airlines` (
                   `id` int(11) NOT NULL AUTO_INCREMENT,
-                  `nom` varchar(200) DEFAULT NULL,
+                  `name_airline` varchar(200) DEFAULT NULL,
                   `code` varchar(200) DEFAULT NULL,
                   PRIMARY KEY (`id`)
                 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
@@ -20,6 +20,29 @@ class Airlines extends Modele
         return $this->_db->insert_id;
     }
 
+    public function addAirline($data){
+        $code = $this->_db->escape_string($data-> code);
+        $name_airline = $this->_db->escape_string($data-> name_airline);
+
+        $sql = " INSERT INTO " .self::TABLE."(name_airline,code) 
+        VALUES ('".$name_airline."','".$code."')";
+
+        $this->_db->query($sql);
+
+    }
+
+    public function getAirlines(){
+
+        $sql = "SELECT * FROM ". self::TABLE;
+        $res = $this->_db->query($sql);
+        $liste = Array();
+
+        while ($row = $res->fetch_assoc()) {
+            $liste[] = $row;
+        }
+
+        return $liste;
+    }
 
 
 }

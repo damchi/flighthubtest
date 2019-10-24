@@ -34,6 +34,12 @@ class Controler
             case 'airlines':
                 $this->airlines();
                 break;
+            case 'addAirport':
+                $this->addAiport();
+                break;
+            case 'addAirline':
+                $this->addAirline();
+                break;
             default:
                 $this->accueil();
                 break;
@@ -58,20 +64,19 @@ class Controler
         $airlines->createTable();
         $airport->createTable();
         $flights->createTable();
+        $data['airports'] = $airport-> getAirports();
+        $data['airlines'] = $airlines-> getAirlines();
         include("vues/entete.php");
-        include("vues/accueil.php");
+        include("vues/formFlights.php");
     }
     private function airports()
     {
-        $airlines = new Airlines();
         $airport = new Airport();
-        $flights = new Flights();
-        $airlines->createTable();
         $airport->createTable();
-        $flights->createTable();
         include("vues/entete.php");
-        include("vues/accueil.php");
+        include("vues/formAirport.php");
     }
+
     private function airlines()
     {
         $airlines = new Airlines();
@@ -81,6 +86,26 @@ class Controler
         $airport->createTable();
         $flights->createTable();
         include("vues/entete.php");
-        include("vues/accueil.php");
+        include("vues/formAirlines.php");
+    }
+    private function addAiport()
+    {
+
+        $body = json_decode(file_get_contents('php://input'));
+        $airport = new Airport();
+        $resultat = $airport->addAirport($body);
+        echo json_encode($resultat);
+
+
+    }
+    private function addAirline()
+    {
+
+        $body = json_decode(file_get_contents('php://input'));
+        $airline = new Airlines();
+        $resultat = $airline->addAirline($body);
+        echo json_encode($resultat);
+
+
     }
 }

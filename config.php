@@ -9,7 +9,7 @@
 
 function mon_autoloader($class)
 {
-    $dossierClasse = array('modeles/', 'vues/', 'lib/','images','' );	// Ajouter les dossiers au besoin
+    $dossierClasse = array('modeles/', 'vues/', 'lib/','images','js','' );	// Ajouter les dossiers au besoin
 
     foreach ($dossierClasse as $dossier)
     {
