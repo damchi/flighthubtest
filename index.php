@@ -1,6 +1,6 @@
 <?php
 /**
- *  * Fichier de lancement du MVC, Il appel le var.init et le gabarit HTML
+ *  * Fichier de lancement du MVC, Il appel le var.init
  **/
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -22,9 +22,9 @@ require_once("./var.init.php");
 /***************************************************/
 /** Démarrage du controleur **/
 /***************************************************/
-//$oCtl = new Controler();
-//$oCtl->gerer();
-require_once("vues/accueil.php");
+$oCtl = new Controler();
+$oCtl->gerer();
+//require_once("vues/accueil.php");
 
 
 

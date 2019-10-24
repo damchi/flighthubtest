@@ -1,5 +1,5 @@
 <?php
-define("BASEURL", "/testFlighthub/flighrhubtest/");
+define("BASEURL", "/flighthubtest/");
 
 define('HOST', 'localhost');
 define('USER', 'root_1');
