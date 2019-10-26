@@ -1,31 +1,35 @@
-<?php
-?>
-<div class="formAirport">
+<div class="formFlight">
 
     <h1> Add flight</h1>
     <form class="form" method="post" enctype="multipart/form-data">
         <input type="hidden" name="id"">
 
         <!-- Airline -->
-        <select name="departure_airport_id">
-            <option value="-1">Airline *</option>
+        <select name="airline_id">
+            <option value="">Airline *</option>
             <?php
-            foreach ( $data['airlines'] as  $airlines){
+            foreach ( $data['airlines']as  $airlines){
                 echo '<option value="'.$airlines['id']. '">'.$airlines['name_airline'].'</option>';
             }
             ?>
-
         </select>
+
+        <!-- Flight number -->
+        <div class="group">
+            <label class="icon_form">Flight number *</label>
+            <input type="number" class="input" name="number_flight" required>
+        </div>
+
+
         <!-- Departure -->
 
         <select name="departure_airport_id">
-            <option value="-1">Departure airport *</option>
+            <option value="">Departure airport *</option>
             <?php
             foreach ( $data['airports'] as  $airports){
                 echo '<option value="'.$airports['id']. '">'.$airports['name_airports'].'</option>';
             }
             ?>
-
         </select>
 
         <!-- Departure Time -->
@@ -37,7 +41,7 @@
 
         <!-- Arrival -->
         <select name="arrival_airport_id">
-            <option value="-1">Arrival airport *</option>
+            <option value="">Arrival airport *</option>
             <?php
             foreach ( $data['airports'] as  $airports){
                 echo '<option value="'.$airports['id']. '">'.$airports['name_airports'].'</option>';
@@ -55,7 +59,9 @@
         <!--Price  -->
         <div class="group">
             <label class="icon_form">Price *</label>
-            <input type="number" class="input" name="price" placeholder="100$" required>
+<!--            <input type="number" class="input"  name="price" required>-->
+            <input type="number" class="input" step="any" min="0" lang="en" name="price" required>
+
         </div>
 
 
@@ -66,7 +72,7 @@
 
         <!-- Bouton enregistrer -->
         <div class="group">
-            <input type="submit" value="Enregistrer" name="submitForm">
+            <input type="submit" value="Enregistrer" name="submitFormFlight">
         </div>
     </form>
 </div>

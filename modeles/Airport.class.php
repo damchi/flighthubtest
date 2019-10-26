@@ -15,8 +15,8 @@ class Airport extends Modele
           `city` varchar(200) DEFAULT NULL,
           `country_code` varchar(200) DEFAULT NULL,
           `region_code` varchar(200) DEFAULT NULL,
-          `latitude` varchar(200)  DEFAULT NULL,
-          `longitude` varchar(200)  DEFAULT NULL,
+          `latitude` DECIMAL(18,2) DEFAULT NULL,
+          `longitude` DECIMAL(18,2)   DEFAULT NULL,
           `timezone` varchar(200) DEFAULT NULL,
           PRIMARY KEY (`id`)
         ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;";
@@ -43,8 +43,6 @@ class Airport extends Modele
                 '".$latitude."','".$longitude."','".$timezone."')";
 
         $this->_db->query($sql);
-
-
     }
 
     public function getAirports(){

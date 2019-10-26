@@ -40,11 +40,24 @@ class Controler
             case 'addAirline':
                 $this->addAirline();
                 break;
+            case 'addFlight':
+                $this->addFlight();
+                break;
+            case 'getAirportsArrival':
+                $this->getAirportsArrival();
+                break;
+            case 'findRoundTrip':
+                $this->findRoundTrip();
+                break;
+            case 'findSingleTrip':
+                $this->findSingleTrip();
+                break;
             default:
                 $this->accueil();
                 break;
         }
     }
+//    create table
     private function accueil()
     {
         $airlines = new Airlines();
@@ -53,6 +66,7 @@ class Controler
         $airlines->createTable();
         $airport->createTable();
         $flights->createTable();
+        $data['airports'] = $airport-> getAirports();
         include("vues/entete.php");
         include("vues/accueil.php");
     }
@@ -76,7 +90,6 @@ class Controler
         include("vues/entete.php");
         include("vues/formAirport.php");
     }
-
     private function airlines()
     {
         $airlines = new Airlines();
@@ -88,6 +101,8 @@ class Controler
         include("vues/entete.php");
         include("vues/formAirlines.php");
     }
+
+//    insert data
     private function addAiport()
     {
 
@@ -107,5 +122,38 @@ class Controler
         echo json_encode($resultat);
 
 
+    }
+    private function addFlight()
+    {
+        $body = json_decode(file_get_contents('php://input'));
+        $flight = new Flights();
+        $resultat = $flight->addFlight($body);
+        echo json_encode($resultat);
+
+
+    }
+
+//    trips
+    private function getAirportsArrival()
+    {
+        $body = json_decode(file_get_contents('php://input'));
+        $flight = new Flights();
+        $resultat = $flight->getAirportsArrival($body);
+        echo json_encode($resultat);
+//        $data['airportsArrival'] = $flight->getAirportsArrival($_GET['departure_airport_id']);
+    }
+    private function findRoundTrip()
+    {
+        $body = json_decode(file_get_contents('php://input'));
+        $flight = new Flights();
+        $resultat = $flight->findRoundTrip($body);
+        echo json_encode($resultat);
+    }
+    private function findSingleTrip()
+    {
+        $body = json_decode(file_get_contents('php://input'));
+        $flight = new Flights();
+        $resultat = $flight->findSingleTrip($body);
+        echo json_encode($resultat);
     }
 }

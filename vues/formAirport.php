@@ -44,13 +44,17 @@
         <!-- Latitude -->
         <div class="group">
             <label class="icon_form" >Lattitude *</label>
-            <input type="text" class="input" name="latitude" placeholder="Latitude" required>
+<!--            <input type="text" class="input" name="latitude" placeholder="Latitude" required>-->
+            <input type="number" class="input" step="any"  lang="en" name="latitude" required>
+
         </div>
 
         <!-- Longitude -->
         <div class="group">
             <label class="icon_form" >Longitude *</label>
-            <input type="text" class="input" name="longitude" placeholder="Longitude" required>
+<!--            <input type="text" class="input" name="longitude" placeholder="Longitude" required>-->
+            <input type="number" class="input" step="any" lang="en" name="longitude" required>
+
         </div>
 
         <!-- Timezone -->
