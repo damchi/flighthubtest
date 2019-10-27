@@ -5,7 +5,7 @@
 
         <!-- Departure -->
         <input type="radio" name="roundTrip" value="round" checked> Round trip<br>
-        <input type="radio" name="roundTrip" value="single"> Single way
+        <input type="radio" name="roundTrip" value="single"> Single way<br>
 
         <select name="departure_trip">
             <option value="">Departure airport *</option>

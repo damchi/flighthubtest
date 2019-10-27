@@ -58,26 +58,32 @@ class Controler
         }
     }
 //    create table
-    private function accueil()
-    {
+    private function create(){
         $airlines = new Airlines();
         $airport = new Airport();
         $flights = new Flights();
         $airlines->createTable();
         $airport->createTable();
         $flights->createTable();
+
+
+        $airport->createData();
+        $airlines->createData();
+        $flights->createData();
+    }
+    private function accueil()
+    {
+        $this->create();
+        $airport = new Airport();
         $data['airports'] = $airport-> getAirports();
         include("vues/entete.php");
         include("vues/accueil.php");
     }
     private function flights()
     {
+        $this->create();
         $airlines = new Airlines();
         $airport = new Airport();
-        $flights = new Flights();
-        $airlines->createTable();
-        $airport->createTable();
-        $flights->createTable();
         $data['airports'] = $airport-> getAirports();
         $data['airlines'] = $airlines-> getAirlines();
         include("vues/entete.php");
@@ -85,6 +91,7 @@ class Controler
     }
     private function airports()
     {
+        $this->create();
         $airport = new Airport();
         $airport->createTable();
         include("vues/entete.php");
@@ -92,12 +99,7 @@ class Controler
     }
     private function airlines()
     {
-        $airlines = new Airlines();
-        $airport = new Airport();
-        $flights = new Flights();
-        $airlines->createTable();
-        $airport->createTable();
-        $flights->createTable();
+        $this->create();
         include("vues/entete.php");
         include("vues/formAirlines.php");
     }

@@ -19,6 +19,24 @@ class Airlines extends Modele
 
         return $this->_db->insert_id;
     }
+    public function createData(){
+        $sql = " INSERT INTO ".self::TABLE." 
+  (`id`, `name_airline`, `code`) VALUES
+    (11, 'Air Canada', 'AC'),
+    (12, 'Air France', 'AF')
+ON DUPLICATE KEY UPDATE
+  id = VALUES(id), 
+  code = VALUES(code) ";
+
+
+
+
+
+        $this->_db->query($sql);
+
+        return $this->_db->insert_id;
+    }
+
 
     public function addAirline($data){
         $code = $this->_db->escape_string($data-> code);

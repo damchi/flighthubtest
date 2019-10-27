@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="669dc228-4ccc-425c-b0c8-29cd9fa4dd55" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Controler.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controler.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/formFlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/formFlight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modeles/Airlines.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/modeles/Airlines.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modeles/Airport.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/modeles/Airport.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modeles/Flights.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/modeles/Flights.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vues/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/vues/accueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vues/formAirport.php" beforeDir="false" afterPath="$PROJECT_DIR$/vues/formAirport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vues/formFlights.php" beforeDir="false" afterPath="$PROJECT_DIR$/vues/formFlights.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,19 +23,28 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49570817">
+    <splitter split-orientation="horizontal" split-proportion="0.37339056">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/modeles/Airport.class.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="31" column="95" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
+                  <folding>
+                    <element signature="n#createTable#0;n#Airport#0;n#!!top" />
+                    <element signature="n#getAirports#0;n#Airport#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Controler.class.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="511">
-                  <caret line="155" column="43" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+                <state relative-caret-position="-449">
+                  <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
                   <folding>
-                    <element signature="n#accueil#0;n#Controler#0;n#!!top" />
-                    <element signature="n#flights#0;n#Controler#0;n#!!top" />
-                    <element signature="n#airports#0;n#Controler#0;n#!!top" />
-                    <element signature="n#airlines#0;n#Controler#0;n#!!top" />
                     <element signature="n#addAiport#0;n#Controler#0;n#!!top" />
                     <element signature="n#addAirline#0;n#Controler#0;n#!!top" />
                     <element signature="n#addFlight#0;n#Controler#0;n#!!top" />
@@ -60,8 +66,12 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/modeles/Airlines.class.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+                <state relative-caret-position="179">
+                  <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+                  <folding>
+                    <element signature="n#createTable#0;n#Airlines#0;n#!!top" />
+                    <element signature="n#addAirline#0;n#Airlines#0;n#!!top" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -93,11 +103,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/vues/accueil.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="20" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="20" />
+                <state relative-caret-position="105">
+                  <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
                 </state>
               </provider>
             </entry>
@@ -118,11 +128,15 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/modeles/Flights.class.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="106">
-                  <caret line="131" column="34" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="34" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
                   <folding>
+                    <element signature="n#createTable#0;n#Flights#0;n#!!top" />
+                    <element signature="n#createTable#1;n#Flights#0;n#!!top" />
                     <element signature="n#addFlight#0;n#Flights#0;n#!!top" />
+                    <element signature="n#getAirportsArrival#0;n#Flights#0;n#!!top" />
                     <element signature="n#findRoundTrip#0;n#Flights#0;n#!!top" />
+                    <element signature="n#findSingleTrip#0;n#Flights#0;n#!!top" />
                   </folding>
                 </state>
               </provider>
@@ -131,12 +145,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="416">
-                  <caret line="133" column="67" selection-start-line="133" selection-start-column="67" selection-end-line="133" selection-end-column="67" />
+                <state relative-caret-position="1657">
+                  <caret line="141" column="13" lean-forward="true" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
                   <folding>
                     <element signature="e#6844#6905#0" />
                     <element signature="e#11848#11925#0" />
                     <element signature="n#!!block;n#printResult#0" />
+                    <element signature="n#!!block;n#printResult#1" />
                   </folding>
                 </state>
               </provider>
@@ -187,15 +202,15 @@
         <option value="$PROJECT_DIR$/js/formAirline.js" />
         <option value="$PROJECT_DIR$/vues/formAirlines.php" />
         <option value="$PROJECT_DIR$/vues/entete.php" />
-        <option value="$PROJECT_DIR$/modeles/Airlines.class.php" />
         <option value="$PROJECT_DIR$/js/formFlight.js" />
         <option value="$PROJECT_DIR$/vues/formAirport.php" />
-        <option value="$PROJECT_DIR$/modeles/Airport.class.php" />
         <option value="$PROJECT_DIR$/vues/formFlights.php" />
-        <option value="$PROJECT_DIR$/vues/accueil.php" />
-        <option value="$PROJECT_DIR$/modeles/Flights.class.php" />
-        <option value="$PROJECT_DIR$/Controler.class.php" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/modeles/Flights.class.php" />
+        <option value="$PROJECT_DIR$/modeles/Airlines.class.php" />
+        <option value="$PROJECT_DIR$/modeles/Airport.class.php" />
+        <option value="$PROJECT_DIR$/Controler.class.php" />
+        <option value="$PROJECT_DIR$/vues/accueil.php" />
       </list>
     </option>
   </component>
@@ -227,6 +242,16 @@
               <item name="flighthubtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="flighthubtest" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flighthubtest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flighthubtest" type="462c0819:PsiDirectoryNode" />
+              <item name="modeles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flighthubtest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flighthubtest" type="462c0819:PsiDirectoryNode" />
+              <item name="vues" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -277,12 +302,12 @@
       <option name="presentableId" value="Default" />
       <updated>1571873820172</updated>
       <workItem from="1571873821425" duration="301000" />
-      <workItem from="1571874168552" duration="51120000" />
+      <workItem from="1571874168552" duration="53829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51421000" />
+    <option name="totallyTimeSpent" value="54130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="0" />
@@ -421,34 +446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modeles/Airport.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="n#getAirports#0;n#Airport#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modeles/Flights.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="131" column="34" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="34" />
-          <folding>
-            <element signature="n#addFlight#0;n#Flights#0;n#!!top" />
-            <element signature="n#findRoundTrip#0;n#Flights#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vues/accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/var.init.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -479,20 +476,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modeles/Airlines.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="179">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding>
+            <element signature="n#createTable#0;n#Airlines#0;n#!!top" />
+            <element signature="n#addAirline#0;n#Airlines#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeles/Airport.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="31" column="95" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
+          <folding>
+            <element signature="n#createTable#0;n#Airport#0;n#!!top" />
+            <element signature="n#getAirports#0;n#Airport#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Controler.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="155" column="43" selection-start-line="155" selection-start-column="43" selection-end-line="155" selection-end-column="43" />
+        <state relative-caret-position="-449">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
-            <element signature="n#accueil#0;n#Controler#0;n#!!top" />
-            <element signature="n#flights#0;n#Controler#0;n#!!top" />
-            <element signature="n#airports#0;n#Controler#0;n#!!top" />
-            <element signature="n#airlines#0;n#Controler#0;n#!!top" />
             <element signature="n#addAiport#0;n#Controler#0;n#!!top" />
             <element signature="n#addAirline#0;n#Controler#0;n#!!top" />
             <element signature="n#addFlight#0;n#Controler#0;n#!!top" />
@@ -501,14 +509,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vues/accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modeles/Flights.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="n#createTable#0;n#Flights#0;n#!!top" />
+            <element signature="n#createTable#1;n#Flights#0;n#!!top" />
+            <element signature="n#addFlight#0;n#Flights#0;n#!!top" />
+            <element signature="n#getAirportsArrival#0;n#Flights#0;n#!!top" />
+            <element signature="n#findRoundTrip#0;n#Flights#0;n#!!top" />
+            <element signature="n#findSingleTrip#0;n#Flights#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="133" column="67" selection-start-line="133" selection-start-column="67" selection-end-line="133" selection-end-column="67" />
+        <state relative-caret-position="1657">
+          <caret line="141" column="13" lean-forward="true" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
           <folding>
             <element signature="e#6844#6905#0" />
             <element signature="e#11848#11925#0" />
             <element signature="n#!!block;n#printResult#0" />
+            <element signature="n#!!block;n#printResult#1" />
           </folding>
         </state>
       </provider>

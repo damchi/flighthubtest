@@ -1,6 +1,6 @@
 <?php
 /**
- * Fichier de configuration. Il est appelé par index.php et par test/index.php
+ * Fichier de configuration. Il est appelé par index.php e
  *
  */
 

@@ -25,6 +25,24 @@ class Airport extends Modele
 
         return $this->_db->insert_id;
     }
+    public function createData(){
+        $sql = " INSERT INTO ".self::TABLE." (`id`, `city_code`, `code`, `name_airports`, `city`, `country_code`, `region_code`, `latitude`, `longitude`, `timezone`) VALUES
+(11, 'YMQ', 'YUL', 'Pierre Elliot Trudeau International', 'Montreal', 'CA', 'QC', '45.46', '-73.75', 'America/Montreal'),
+(12, 'YVR', 'YVR', 'Vancouver International', 'Vancouver', 'CA', 'BC', '49.19', '-123.18', 'America/vancouver'),
+(13, 'TLS', 'TLS', 'Toulouse Blagnac', 'Toulouse', 'FR', 'OC', '43.63', '1.37', 'Europe/Paris')
+ON DUPLICATE KEY UPDATE
+  id = VALUES(id), 
+  code = VALUES(code) ";
+
+
+
+
+
+        $this->_db->query($sql);
+
+        return $this->_db->insert_id;
+    }
+
 
     public function addAirport($data){
         $city_code = $this->_db->escape_string($data-> city_code);

@@ -36,6 +36,29 @@ class Flights extends Modele
 
         return $this->_db->insert_id;
     }
+    public function createData(){
+        $sql = " INSERT INTO ".self::TABLE." 
+  (`id`, `airline_id`, `number_flight`, `departure_airport_id`, `departure_time`, `arrival_airport_id`, `arrival_time`, `price`)
+    VALUES
+    (11, 11, '301', 11, '07:35:00', 12, '10:05:00', '273.23'),
+    (12, 11, '302', 12, '11:30:00', 11, '19:11:00', '220.63'),
+    (13, 11, '303', 12, '19:50:00', 13, '08:00:00', '300.00'),
+    (14, 12, '100', 13, '18:00:00', 11, '17:00:00', '300.00'),
+    (15, 12, '101', 11, '19:00:00', 13, '08:00:00', '300.00'),
+    (16, 12, '102', 11, '08:00:00', 12, '11:00:00', '180.00'),
+    (17, 12, '104', 12, '12:00:00', 11, '18:00:00', '190.00')
+ON DUPLICATE KEY UPDATE
+  id = VALUES(id), 
+  number_flight = VALUES(number_flight) ";
+
+
+
+
+
+        $this->_db->query($sql);
+
+        return $this->_db->insert_id;
+    }
 
     /**
      * insert flight
